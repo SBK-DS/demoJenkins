@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''echo "this is build step"'''
+        bat(script: 'echo "this is build step"', returnStatus: true, returnStdout: true)
       }
     }
 
