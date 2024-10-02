@@ -14,7 +14,7 @@ pipeline{
                 // mvn test
                 bat '''
                     echo "test"
-                    echo JAVA_HOME=%JAVA_HOME%
+                    echo "JAVA_HOME=%JAVA_HOME%"
                     mvn test
                 '''
             }
